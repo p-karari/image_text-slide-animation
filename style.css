@@ -1,0 +1,55 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+.card_img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.box {
+    width: 25rem;
+    height: 15rem;
+    margin: 10px;
+}
+
+.box:nth-child(even) {
+    width: 50rem;
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.pp {
+    width: 20rem;   
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: Cambria,  'Times New Roman', serif;    
+}
+
+.box:nth-child(even):hover {
+    width: 22.5rem ;
+    opacity: 1;
+}
+
+.super_cont {
+    display: flex;
+    position: relative;
+}
+
+.box_super_cont {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+/* End of style sheet */
